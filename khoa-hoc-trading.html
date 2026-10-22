@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trader Academy – Khóa học trading cổ phiếu, quyền chọn, phái sinh</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#09090a;--s1:#111113;--s2:#18181b;--line:#27272b;--tx:#f4f4f5;--mu:#9d9da6;--g:#e4e4e7;--g2:#a1a1aa;--gd:#71717a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:70px;background:var(--bg)}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 16px/1.65 "Plus Jakarta Sans",system-ui,Arial,sans-serif}
+.w{max-width:1040px;margin:0 auto;padding:0 20px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h1,h2,h3{margin:0 0 16px;line-height:1.15;letter-spacing:-.02em}
+h1{font-size:clamp(34px,6vw,60px);font-weight:800}
+h2{font-size:clamp(26px,4vw,38px);font-weight:800}
+h3{font-size:17px;font-weight:600;margin-bottom:8px}
+.g{color:var(--g)}
+p{margin:0 0 14px;color:var(--mu)}
+a{color:inherit}
+nav{position:sticky;top:0;z-index:10;background:rgba(9,9,10,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;text-decoration:none}
+.brand svg{width:30px;height:30px}
+.links{display:flex;gap:22px;font-size:14px;color:var(--mu)}
+.links a{text-decoration:none}.links a:hover{color:var(--tx)}
+.btn{display:inline-block;padding:14px 26px;border-radius:10px;font-weight:700;text-decoration:none;border:1px solid var(--line);background:var(--s2);color:var(--tx);cursor:pointer;font-family:inherit;font-size:15px}
+.btn.p{background:linear-gradient(180deg,var(--g),var(--g2));color:#0b0b0c;border-color:var(--g);box-shadow:0 8px 28px rgba(228,228,231,.12)}
+.btn.s{padding:9px 18px;font-size:14px}
+.btn:focus-visible,summary:focus-visible{outline:2px solid var(--g);outline-offset:3px}
+.hero{padding:72px 0 64px;display:grid;grid-template-columns:1.25fr 1fr;gap:40px;align-items:center;background:radial-gradient(900px 420px at 80% 30%,rgba(161,161,170,.14),transparent 70%)}
+.pill{display:inline-flex;gap:8px;align-items:center;font-size:13px;color:var(--mu);margin-bottom:18px}
+.pill::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--g)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.chips span{font-size:13px;padding:7px 12px;border:1px solid var(--line);border-radius:8px;background:var(--s1);color:var(--mu)}
+.row{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.logo{aspect-ratio:1;border-radius:22px;background:#000;border:1px solid var(--line);display:grid;place-items:center;box-shadow:0 30px 80px rgba(161,161,170,.16)}
+.logo svg{width:52%}
+.strip{border-block:1px solid var(--line);background:var(--s1)}
+.strip .w{display:flex;gap:28px;overflow-x:auto;padding-block:16px;font-size:13px;font-weight:700;color:var(--g);white-space:nowrap}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:30px}
+.card{background:var(--s1);border:1px solid var(--line);border-radius:14px;padding:24px}
+.card .ic{width:40px;height:40px;border-radius:10px;background:var(--s2);border:1px solid var(--line);display:grid;place-items:center;color:var(--g);margin-bottom:16px;font-size:18px}
+.card p:last-child{margin:0}
+.rate{display:grid;grid-template-columns:200px 1fr;gap:30px;align-items:center;margin-top:28px}
+.big{font-size:56px;font-weight:800;text-align:center;line-height:1}
+.bar{display:grid;grid-template-columns:34px 1fr 40px;gap:10px;align-items:center;font-size:13px;color:var(--mu);margin:5px 0}
+.bar i{height:8px;border-radius:9px;background:var(--s2);overflow:hidden}
+.bar i b{display:block;height:100%;background:var(--g2)}
+.stars{color:var(--g);letter-spacing:2px}
+.note{font-size:13px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:28px}
+ul.l{margin:0;padding:0;list-style:none}
+ul.l li{padding:7px 0 7px 22px;position:relative;color:var(--mu)}
+ul.l li::before{content:"";position:absolute;left:4px;top:17px;width:6px;height:6px;border-radius:50%;background:var(--g)}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:30px}
+.plan{background:var(--s1);border:1px solid var(--line);border-radius:16px;padding:28px}
+.plan.hot{border:2px solid var(--g);background:linear-gradient(180deg,#1c1c20,var(--s1))}
+.plan .t{font-size:12px;font-weight:700;color:var(--mu)}
+.plan .n{font-size:42px;font-weight:800;margin:6px 0 0;letter-spacing:-.02em}
+.tag{display:inline-block;font-size:12px;font-weight:700;color:var(--g);background:var(--s2);border:1px solid var(--line);padding:3px 10px;border-radius:6px;margin:8px 0 16px}
+.plan .btn{width:100%;text-align:center;margin-top:18px}
+details{background:var(--s1);border:1px solid var(--line);border-radius:12px;margin-bottom:10px}
+summary{cursor:pointer;padding:18px 22px;font-weight:600;list-style:none;display:flex;justify-content:space-between}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--g);font-size:20px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{padding:0 22px 18px;margin:0}
+.cta{text-align:center;background:radial-gradient(700px 300px at 50% 0%,rgba(161,161,170,.15),transparent 70%)}
+.cta .logo{width:110px;margin:0 auto 24px;border-radius:20px}
+.cta p{max-width:52ch;margin-inline:auto}
+footer{border-top:1px solid var(--line);padding:40px 0;font-size:14px;color:var(--mu)}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}
+.fg a{display:block;text-decoration:none;padding:3px 0}
+.fg b{color:var(--tx);display:block;margin-bottom:8px}
+.disc{margin-top:28px;padding-top:20px;border-top:1px solid var(--line);font-size:13px}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.links{display:none}.rate{grid-template-columns:1fr}section{padding:52px 0}.fg{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+[hidden]{display:none!important}
+.bank{margin:12px 0 18px}.bank div{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14px}.bank span{color:var(--mu)}
+input{width:100%;padding:14px;border-radius:10px;border:1px solid var(--line);background:var(--s2);color:var(--tx);font:inherit;margin-bottom:12px}
+input:focus-visible{outline:2px solid var(--g);outline-offset:2px}
+.les{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 0;border-bottom:1px solid var(--line)}.les:last-child{border:0}.les p{margin:0}
+.err{color:#f87171;font-size:14px;min-height:20px;margin:0 0 8px}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><symbol id="lg" viewBox="0 0 64 64"><g fill="none" stroke="#e4e4e7" stroke-width="4" stroke-linecap="round"><path d="M14 10v44M14 20v22"/><path d="M32 6v52"/><path d="M50 14v40"/></g><rect x="9" y="22" width="10" height="20" rx="2" fill="#e4e4e7"/><rect x="27" y="16" width="10" height="26" rx="2" fill="#e4e4e7"/><rect x="45" y="26" width="10" height="20" rx="2" fill="#e4e4e7"/></symbol></svg>
+
+<nav><div class="w">
+  <a class="brand" href="#top"><svg><use href="#lg"/></svg>TB Trader Academy</a>
+  <div class="links"><a href="#noidung">Nội dung</a><a href="#danhgia">Đánh giá</a><a href="#phuhop">Phù hợp?</a><a href="#hocphi">Học phí</a><a href="#faq">Hỏi đáp</a></div>
+  <span style="display:flex;gap:8px"><a class="btn s" href="#vaohoc">Vào học</a><a class="btn p s" href="#thanhtoan">Đăng ký ngay</a></span>
+</div></nav>
+
+<header id="top"><div class="w hero">
+  <div>
+    
+    <h1>Giao dịch chỉ số, hàng hóa, quyền chọn.<br><span class="g">Một lộ trình trọn vẹn.</span></h1>
+    <p>Ý tưởng giao dịch scalp, swing, đầu tư dài hạn và bài giảng bài bản, tất cả trong một khóa học của TB Trader Academy.</p>
+    <div class="row"><a class="btn p" href="#hocphi">Đăng ký khóa học</a><a class="btn" href="#noidung">Xem nội dung</a></div>
+    <div class="chips"><span><span class="stars">★★★★★</span> 4,9 từ 454 học viên</span><span>Giao dịch hằng ngày</span><span>Từ 5.000.000đ</span></div>
+  </div>
+  <div class="logo"><svg viewBox="0 0 64 64"><use href="#lg"/></svg></div>
+</div></header>
+
+<div class="strip"><div class="w"><span>QUẢN TRỊ VỐN</span><span>GIAO DỊCH SWING</span><span>Ý TƯỞNG DÀI HẠN</span><span>PHÂN TÍCH CHỈ SỐ</span><span>HỌC VIỆN</span></div></div>
+
+<section id="noidung"><div class="w">
+  <h2>Bên trong khóa học <span class="g">Trader Academy</span></h2>
+  <p>Mô tả ngắn gọn những gì bạn nhận được sau khi đăng ký.</p>
+  <div class="grid">
+    <div class="card"><div class="ic">◈</div><h3>Quản trị vốn và rủi ro</h3><p>Cách chia vốn, đặt cắt lỗ và bảo vệ tài khoản khi thị trường biến động.</p></div>
+    <div class="card"><div class="ic">↗</div><h3>Giao dịch swing</h3><p>Ý tưởng swing cổ phiếu và quyền chọn kèm vùng vào lệnh, cắt lỗ.</p></div>
+    <div class="card"><div class="ic">◎</div><h3>Ý tưởng đầu tư dài hạn</h3><p>Danh mục dài hạn song song với các lệnh ngắn hạn.</p></div>
+    <div class="card"><div class="ic">▤</div><h3>Học viện và bài giảng</h3><p>Bài học từ nền tảng đến quyền chọn và phái sinh.</p></div>
+    <div class="card"><div class="ic">✓</div><h3>Checklist giao dịch</h3><p>Bộ kiểm tra trước mỗi lệnh để giữ kỷ luật.</p></div>
+    <div class="card"><div class="ic">◐</div><h3>Phân tích chỉ số và hàng hóa</h3><p>Đọc cấu trúc giá, dòng tiền và xây kịch bản giao dịch rõ ràng.</p></div>
+  </div>
+  <div class="row"><a class="btn p" href="#hocphi">Đăng ký khóa học</a></div>
+</div></section>
+
+<section id="danhgia"><div class="w">
+  <h2>Học viên đánh giá <span class="g">4,9 / 5</span></h2>
+  <p>[Thay bằng thống kê thật: 415 trên 454 đánh giá là 5 sao.]</p>
+  <div class="card"><div class="rate">
+    <div><div class="big">4,9</div><div class="stars" style="text-align:center;margin:8px 0">★★★★★</div><p class="note" style="text-align:center;margin:0">454 đánh giá</p></div>
+    <div>
+      <div class="bar">5 ★<i><b style="width:91%"></b></i>91%</div>
+      <div class="bar">4 ★<i><b style="width:7%"></b></i>7%</div>
+      <div class="bar">3 ★<i><b style="width:.4%"></b></i>0,4%</div>
+      <div class="bar">2 ★<i><b style="width:.7%"></b></i>0,7%</div>
+      <div class="bar">1 ★<i><b style="width:.7%"></b></i>0,7%</div>
+    </div>
+  </div></div>
+  <div class="grid">
+    <div class="card"><div class="stars">★★★★★</div><p style="color:var(--tx);margin-top:10px">“[Đánh giá thật của học viên 1.]”</p><p class="note"><b style="color:var(--tx)">[Tên học viên]</b> · [Thời gian]</p></div>
+    <div class="card"><div class="stars">★★★★★</div><p style="color:var(--tx);margin-top:10px">“[Đánh giá thật của học viên 2.]”</p><p class="note"><b style="color:var(--tx)">[Tên học viên]</b> · [Thời gian]</p></div>
+    <div class="card"><div class="stars">★★★★★</div><p style="color:var(--tx);margin-top:10px">“[Đánh giá thật của học viên 3.]”</p><p class="note"><b style="color:var(--tx)">[Tên học viên]</b> · [Thời gian]</p></div>
+  </div>
+  <p class="note" style="margin-top:20px">Đánh giá được trích nguyên văn. Kết quả mỗi người khác nhau, không phải cam kết lợi nhuận.</p>
+</div></section>
+
+<section id="phuhop"><div class="w">
+  <h2>Khóa học này <span class="g">có hợp với bạn?</span></h2>
+  <div class="two">
+    <div class="card"><h3>Dành cho bạn nếu bạn…</h3><ul class="l"><li>Giao dịch cổ phiếu, quyền chọn hoặc phái sinh</li><li>Muốn xem livestream và ý tưởng swing mỗi ngày</li><li>Thích phong cách trực diện, không vòng vo</li><li>Đồng thời đầu tư dài hạn</li></ul></div>
+    <div class="card"><h3>Cần biết trước</h3><ul class="l"><li>Thuật ngữ trader có thể khó với người mới</li><li>Quyền chọn và phái sinh có rủi ro cao</li><li>Ý tưởng giao dịch là kiến thức, không phải lời khuyên đầu tư</li><li>Thanh toán một lần, không phí gia hạn</li></ul></div>
+  </div>
+  <div class="row"><a class="btn p" href="#hocphi">Đăng ký khóa học</a></div>
+</div></section>
+
+<section id="hocphi"><div class="w">
+  <h2>Một khóa học duy nhất. <span class="g">Thanh toán một lần.</span></h2>
+  <div class="plans" style="grid-template-columns:minmax(0,520px);justify-content:center">
+    <div class="plan hot"><div class="t">KHÓA HỌC DUY NHẤT</div><div class="n">5.000.000đ</div><span class="tag">Không phí gia hạn</span>
+      <ul class="l"><li>Giao dịch scalp</li><li>Giao dịch swing</li><li>Giao dịch chỉ số, hàng hóa, quyền chọn</li><li>Nhóm Discord riêng</li><li>Hỗ trợ trọn đời</li></ul>
+      <a class="btn p" href="#thanhtoan">Đăng ký khóa học</a></div>
+    
+      
+      
+  </div>
+  <p class="note" style="margin-top:18px">Thanh toán một lần duy nhất. [Cập nhật chính sách hoàn tiền của bạn trước khi đăng.]</p>
+</div></section>
+
+<section id="faq"><div class="w">
+  <h2>Giải đáp nhanh</h2>
+  <details><summary>Khóa học có giá bao nhiêu?</summary><p>Khóa học chỉ có một mức giá duy nhất là 5.000.000đ, thanh toán một lần.</p></details>
+  <details><summary>Người mới có học được không?</summary><p>Có phần nền tảng cho người mới, nhưng quyền chọn và phái sinh có độ khó và rủi ro cao hơn. [Điều chỉnh theo khóa của bạn.]</p></details>
+  <details><summary>Bên trong khóa học có những gì?</summary><p>Livestream hằng ngày, ý tưởng swing, ý tưởng dài hạn, bài giảng, checklist và bản tin tuần.</p></details>
+  <details><summary>Làm sao để vào nhóm cộng đồng?</summary><p>Sau khi thanh toán, bạn nhận hướng dẫn tham gia nhóm qua email. [Cập nhật quy trình thật.]</p></details>
+</div></section>
+
+<section id="thanhtoan"><div class="w">
+  <h2>Đăng ký trong <span class="g">3 bước.</span></h2>
+  <p>Thanh toán 5.000.000đ một lần, sau đó nhắn admin để nhận mã vào học.</p>
+  <div class="grid">
+    <div class="card"><h3>1. Chuyển khoản</h3>
+      <div class="bank"><div><span>Ngân hàng</span><b>Vietcombank</b></div><div><span>Chủ tài khoản</span><b>BUI ANH TU</b></div><div><span>Số tài khoản</span><b id="stk">1063679882</b></div><div><span>Số tiền</span><b>5.000.000đ</b></div><div><span>Nội dung</span><b>TB + số điện thoại</b></div></div>
+      <button class="btn p" id="cp" type="button" style="width:100%">Sao chép số tài khoản</button></div>
+    <div class="card"><h3>2. Nhắn admin xác nhận</h3><p>Gửi ảnh chuyển khoản kèm họ tên và email/số điện thoại để admin cấp mã vào học.</p><a class="btn p" href="https://zalo.me/0326100224" target="_blank" rel="noopener" style="width:100%;text-align:center">Nhắn Zalo admin</a></div>
+    <div class="card"><h3>3. Nhận mã và vào học</h3><p>Admin xác nhận thanh toán và gửi mã học viên cho bạn, thường trong thời gian ngắn.</p><a class="btn" href="#vaohoc" style="width:100%;text-align:center">Đi tới khu vực học</a></div>
+  </div>
+</div></section>
+
+<section id="vaohoc"><div class="w">
+  <h2>Khu vực <span class="g">học viên</span></h2>
+  <div id="gate" class="card" style="max-width:460px;margin-top:24px">
+    <h3>Nhập mã học viên</h3><p>Mã do admin gửi sau khi bạn thanh toán thành công.</p>
+    <input id="code" type="text" placeholder="Ví dụ: TB-XXXX-XXXX" autocomplete="off" aria-label="Mã học viên">
+    <p class="err" id="err" role="alert"></p>
+    <button class="btn p" id="go" type="button" style="width:100%">Vào học</button>
+  </div>
+  <div id="course" hidden class="card" style="margin-top:24px">
+    <h3>Chương trình học TB Trader Academy</h3>
+    <div class="les"><div><b>Chương 1. Nền tảng giao dịch</b><p>[Mô tả ngắn]</p></div><a class="btn s" href="#">Xem bài</a></div>
+    <div class="les"><div><b>Chương 2. Giao dịch chỉ số</b><p>[Mô tả ngắn]</p></div><a class="btn s" href="#">Xem bài</a></div>
+    <div class="les"><div><b>Chương 3. Giao dịch hàng hóa</b><p>[Mô tả ngắn]</p></div><a class="btn s" href="#">Xem bài</a></div>
+    <div class="les"><div><b>Chương 4. Quyền chọn</b><p>[Mô tả ngắn]</p></div><a class="btn s" href="#">Xem bài</a></div>
+    <div class="les"><div><b>Chương 5. Quản trị vốn và tâm lý</b><p>[Mô tả ngắn]</p></div><a class="btn s" href="#">Xem bài</a></div>
+  </div>
+</div></section>
+
+<section class="cta"><div class="w">
+  <div class="logo"><svg viewBox="0 0 64 64"><use href="#lg"/></svg></div>
+  <h2>Học từ người trong cuộc. <span class="g">Giao dịch có kế hoạch.</span></h2>
+  <p>Một khóa học duy nhất 5.000.000đ, thanh toán một lần, không tự gia hạn.</p>
+  <div class="row" style="justify-content:center"><a class="btn p" href="#hocphi">Đăng ký khóa học</a></div>
+</div></section>
+
+<footer><div class="w">
+  <div class="fg">
+    <div><a class="brand" href="#top" style="margin-bottom:10px"><svg><use href="#lg"/></svg>TB Trader Academy</a><p>Thông tin khóa học, đánh giá học viên và hướng dẫn tham gia.</p></div>
+    <div><b>Trader Academy</b><a href="#noidung">Nội dung</a><a href="#danhgia">Đánh giá</a><a href="#hocphi">Học phí</a><a href="#faq">Hỏi đáp</a></div>
+    <div><b>Kết nối</b><a href="#">YouTube</a><a href="#">Facebook</a><a href="#">Zalo / Discord</a></div>
+  </div>
+  <p class="disc"><b style="color:var(--tx)">Cảnh báo rủi ro.</b> Giao dịch cổ phiếu, quyền chọn và phái sinh có rủi ro đáng kể và nhiều người giao dịch bị thua lỗ. Nội dung chỉ mang tính giáo dục, không phải lời khuyên tài chính. Kết quả trong quá khứ không đảm bảo kết quả tương lai. © 2026 Trader Academy.</p>
+</div></footer>
+<script>
+const CODES=["TB-28MJ-FAYP","TB-2EYF-RC8K","TB-2HSJ-WZR6","TB-4JLG-VHX6","TB-56EX-FKNN","TB-59PP-GVVT","TB-725V-WGPK","TB-7HVB-GFLZ","TB-9XBA-AFRJ","TB-BKGF-EKU9","TB-BQA4-QYJF","TB-BS42-DER5","TB-BYYX-5HCQ","TB-BZHZ-AS8E","TB-CMCT-NR48","TB-EESP-T6ZT","TB-F427-4NVH","TB-FG99-5TGL","TB-GD3H-ANP8","TB-GG8V-ZAPP","TB-H76R-ERHP","TB-J36G-2YFU","TB-J47F-34WV","TB-JVGM-GK2P","TB-JY9K-9ZP8","TB-K895-3J23","TB-MWXA-7ZAZ","TB-N9RL-XQZG","TB-ND99-XHE5","TB-NDBL-4S72","TB-NEFY-9WLT","TB-P7ZD-KTRC","TB-PQQM-BYZP","TB-R65N-YS3Z","TB-RHTZ-N6YU","TB-RPAG-PK59","TB-RRT8-7J8Z","TB-RV56-99MJ","TB-TXNT-TUHM","TB-U23D-X5KC","TB-UXK9-68NQ","TB-VME6-7B64","TB-W3LL-Z5NJ","TB-W74R-KMNC","TB-WT9Z-C7QV","TB-XHUQ-CEYP","TB-Y6T7-JRYP","TB-Z5A3-WQ6C","TB-Z6SY-3Q5P","TB-ZKFJ-HLA9"]; // admin thêm mã học viên vào đây
+const $=i=>document.getElementById(i);
+function unlock(){$('gate').hidden=true;$('course').hidden=false}
+try{if(CODES.includes(localStorage.getItem('tbcode')))unlock()}catch(e){}
+function check(){const v=$('code').value.trim();if(CODES.includes(v)){try{localStorage.setItem('tbcode',v)}catch(e){}unlock()}else $('err').textContent='Mã chưa đúng. Liên hệ admin để được cấp mã.'}
+$('go').onclick=check;
+$('code').onkeydown=e=>{if(e.key==='Enter')check()};
+$('cp').onclick=async()=>{try{await navigator.clipboard.writeText($('stk').textContent);$('cp').textContent='Đã sao chép'}catch(e){$('cp').textContent='Hãy chép thủ công'}};
+</script>
+</body>
+</html>
